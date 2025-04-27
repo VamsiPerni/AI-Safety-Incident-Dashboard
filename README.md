@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # AI Safety Dashboard
 
 A web application built with React.js for monitoring and managing AI safety metrics and information.
@@ -140,3 +141,6 @@ The development server will start, and the React app will automatically open in 
 
 
 
+=======
+# AI-Safety-Incident-Dashboard
+>>>>>>> c719368a6251edeb6be87b3d5ee83efb4a557836
