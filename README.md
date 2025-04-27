@@ -1,70 +1,142 @@
-# Getting Started with Create React App
+# AI Safety Dashboard
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A web application built with React.js for monitoring and managing AI safety metrics and information.
 
-## Available Scripts
+## Problem Statement 
 
-In the project directory, you can run:
+Task: Create an interactive "AI Safety Incident Dashboard" component. 
 
-### `npm start`
+● Features: 
+○ Display a list of mock AI safety incidents, showing Title, Severity, and Reported 
+Date for each. 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+●Implement filtering controls (e.g., buttons or dropdown) to filter the list by 
+Severity ("All", "Low", "Medium", "High"). 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+●Add sorting controls (e.g., buttons or dropdown) to sort the list by Reported 
+Date (Newest First, Oldest First). 
 
-### `npm test`
+●Add a "View Details" button/link for each incident. Clicking it should toggle the 
+visibility of the full Description below the entry. Manage this 
+expanded/collapsed state. 
+ 
+●Include an "Report New Incident" form (can be always visible or toggled). The 
+form should have inputs for Title, Description, and Severity (use dropdown or 
+radio buttons for severity levels). 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+●Submitting the form should add the new incident to the displayed list (updating the component's state). Basic input validation (e.g., non-empty fields) is a plus. 
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+●Ensure responsive layout (Flexbox/Grid preferred) and basic, clean styling with 
+hover effects. 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+● Mock Data Structure Example: 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+[ 
 
-### `npm run eject`
+{ "id": 1, "title": "Biased Recommendation Algorithm", "description": "Algorithm 
+consistently favored certain demographics...", "severity": "Medium", 
+"reported_at": "2025-03-15T10:00:00Z" }, 
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+{ "id": 2, "title": "LLM Hallucination in Critical Info", "description": "LLM provided 
+incorrect safety procedure information...", "severity": "High", "reported_at": 
+"2025-04-01T14:30:00Z" }, 
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+{ "id": 3, "title": "Minor Data Leak via Chatbot", "description": "Chatbot 
+inadvertently exposed non-sensitive user metadata...", "severity": "Low", 
+"reported_at": "2025-03-20T09:15:00Z" } 
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+] 
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+## Features
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Rich User Interface built with React components
+- Single Page Application architecture
+- Reusable components for maintainable code
+- Responsive design with CSS
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Prerequisites
 
-### Code Splitting
+Before you begin, ensure you have met the following requirements:
+- Node.js installed (v10 or higher recommended)
+- npm (comes with Node.js) or yarn
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+# Method - 1 :- 
 
-### Analyzing the Bundle Size
+## Installation
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+To install and set up the project, follow these steps:
 
-### Making a Progressive Web App
+1.nodejs.org -> official to download nodejs
+ 
+ ## Check node versions in command prompt
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+ node version
+node -v  or  node --version
+ 
+npm version  -> (node package manager)
+npm -v  or  npm --version
+ 
+npx version  -> (node package executive)
+npx -v  or  npx --version
+ 
+## To create React App
 
-### Advanced Configuration
+1.Create a new React app using the following command:
+ 
+npx create-react-app ai-safety_dashboard
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## After project creation:
 
-### Deployment
+Replace the following files inside your project:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+src/App.jsx → (with your custom App code)
 
-### `npm run build` fails to minify
+public/index.html → (with your updated HTML if needed)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+src/App.css → (with your enhanced CSS)
+
+## Run the React App:
+
+Open your terminal.
+
+Navigate into the project folder:
+
+cd ai-safety_dashboard
+
+### Start the development server:
+
+npm start
+
+The app will automatically open in your browser (default: http://localhost:3000).
+
+
+# Method 2: Run an Existing React App
+
+Open the project folder using VS Code (or any other code editor).
+
+Navigate inside the project folder in your terminal.
+
+Start the React app by running:
+
+npm start
+
+The development server will start, and the React app will automatically open in your browser at http://localhost:3000.
+
+# Project Structure
+
+![Project Structure](images/project_structure.png)
+
+# Project Overview
+
+
+![Project Structure](images\project_overview.png)
+
+
+### Github Link :- 
+
+# Thanks for Visiting
+
+
+
