@@ -131,7 +131,7 @@ The development server will start, and the React app will automatically open in 
 # Project Overview
 
 
-![Project Structure](images\project_overview.png)
+![Project Structure](images/project_overview.png)
 
 
 ### Github Link :- 
